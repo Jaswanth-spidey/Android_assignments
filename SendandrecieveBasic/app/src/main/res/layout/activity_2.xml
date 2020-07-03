@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sendandrecievebasic.ItsSecond">
+    <TextView
+        android:text="Message recieved"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/sendmessagestatus"/>
+
+    <TextView
+        android:id="@+id/sendmessages"
+        android:layout_width="match_parent"
+        android:layout_height="568dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/replytext"
+            android:layout_width="307dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60"
+            android:hint="Enter Your Message Here" />
+
+        <Button
+            android:id="@+id/reply"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:text="reply" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
