@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.scoreboard.MainActivity"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="214dp"
+        android:layout_height="576dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="Team - A"
+            android:textColor="#F40808"
+            android:textSize="30dp"
+            android:id="@+id/textv11"/>
+
+        <TextView
+            android:layout_width="129dp"
+            android:layout_height="111dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="70dp"
+            android:textColor="#000000"
+            android:id="@+id/textv12"/>
+
+        <Button
+            android:layout_width="107dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:background="#3D64C8"
+            android:text="+3"
+            android:textColor="#ffffff"
+            android:id="@+id/b11"/>
+
+        <Button
+            android:layout_width="107dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:background="#4CB550"
+            android:text="+2"
+            android:textColor="#ffffff"
+            android:id="@+id/b12"/>
+
+        <Button
+            android:layout_width="107dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:background="#EDD81C"
+            android:text="+1"
+            android:textColor="#000000"
+            android:id="@+id/b13"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="576dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="245dp"
+            android:layout_height="102dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="Team - B"
+            android:textColor="#F40808"
+            android:textSize="30dp"
+            android:id="@+id/textv21"/>
+
+        <TextView
+            android:layout_width="129dp"
+            android:layout_height="112dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="70dp"
+            android:textColor="#000000"
+            android:id="@+id/textv22"/>
+
+        <Button
+            android:layout_width="107dp"
+            android:layout_height="23dp"
+            android:layout_weight="0.25"
+            android:layout_gravity="center"
+            android:text="+3"
+            android:background="#3D64C8"
+            android:textColor="#ffffff"
+            android:id="@+id/b21"/>
+
+        <Button
+            android:layout_width="107dp"
+            android:layout_height="23dp"
+            android:layout_weight="0.25"
+            android:layout_gravity="center"
+            android:text="+2"
+            android:background="#4CB550"
+            android:textColor="#ffffff"
+            android:id="@+id/b22"/>
+
+        <Button
+            android:layout_width="107dp"
+            android:layout_height="23dp"
+            android:layout_weight="0.25"
+            android:layout_gravity="center"
+            android:text="+1"
+            android:background="#EDD81C"
+            android:textColor="#000000"
+            android:id="@+id/b23"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
