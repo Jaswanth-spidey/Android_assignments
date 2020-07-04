@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Registration Form</string>
+    <string-array name="Department">
+        <item>Select your department</item>
+        <item>None</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>MEC</item>
+        <item>EEE</item>
+    </string-array>
+</resources>

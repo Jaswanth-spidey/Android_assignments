@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.registrationform.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Enter your Details"
+        android:textColor="#F31B1B"
+        android:textSize="35dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="29dp" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Roll no..."
+        android:textColor="#000000"
+        android:id="@+id/rollno"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Name..."
+        android:textColor="#000000"
+        android:inputType="textCapWords"
+        android:id="@+id/name"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Phone no..."
+        android:textColor="#000000"
+        android:inputType="phone"
+        android:id="@+id/phoneno"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="email id..."
+        android:textColor="#000000"
+        android:inputType="textEmailAddress"
+        android:id="@+id/emailid"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Password..."
+        android:textColor="#000000"
+        android:inputType="textPassword"
+        android:id="@+id/password"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Gender"
+        android:textColor="#534949"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Male"
+            android:id="@+id/male"/>
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Female"
+            android:id="@+id/female"/>
+    </RadioGroup>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Department"
+        android:textColor="#534949"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <Spinner
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/department"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="31dp" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="submit"
+        android:background="#1033E1"
+        android:textColor="#ffffff"
+        android:id="@+id/submit"/>
+</LinearLayout>

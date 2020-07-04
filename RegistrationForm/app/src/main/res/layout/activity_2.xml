@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:gravity="center"
+        android:text="Your details"
+        android:textColor="#F10808"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="522dp"
+            android:id="@+id/textview3"
+            android:textColor="#000000"
+            android:textSize="25sp"/>
+    </ScrollView>
+
+</LinearLayout>
