@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:layout_height="20dp"
+        android:layout_width="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EFEFD8">
+
+        <ImageView
+            android:id="@+id/images"
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/codename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code number"
+                android:textSize="25sp"
+                android:layout_marginTop="30sp"
+                android:textColor="#50C11F"/>
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="version name"
+                android:textSize="25sp"
+                android:textColor="#D32F2F"/>
+            <TextView
+                android:id="@+id/apilevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Api level"
+                android:textSize="25sp"
+                android:textColor="#303F9F"/>
+            <TextView
+                android:id="@+id/releasedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Release date"
+                android:textSize="25sp"
+                android:textColor="#EA6B9D"
+                android:layout_marginBottom="30sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
