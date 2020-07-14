@@ -25,7 +25,6 @@ public class Covid_task extends AsyncTask<Void, Void, String>
     Context ct;
     ProgressDialog pd;
     RecyclerView rv;
-    String myurll;
 
     public Covid_task(MainActivity mainActivity,RecyclerView recyclerView) {
         ct= mainActivity;
@@ -69,6 +68,7 @@ public class Covid_task extends AsyncTask<Void, Void, String>
         int i;
         List<Covid_assign> bookList= new ArrayList<>();
         try{
+
             //Its Jaswanth's code
             JSONArray jsonArray = new JSONArray(s);
             for (i=(jsonArray.length()-1);i>=0;i--){
@@ -77,6 +77,10 @@ public class Covid_task extends AsyncTask<Void, Void, String>
                 String active = obj.getString("Active");
                 String deaths = obj.optString("Deaths");
                 String date = obj.optString("Date");
+                String date1= date.substring(8,10);
+                String date2=date.substring(5,7);
+                String date3=date.substring(0,4);
+                date = date1+"-"+date2+"-"+date3;
 
                 Covid_assign assign= new Covid_assign(confirmed, active,deaths,date);
                 bookList.add(assign);
@@ -90,6 +94,5 @@ public class Covid_task extends AsyncTask<Void, Void, String>
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }

@@ -10,6 +10,7 @@ public class Covid_assign {
         this.date= date;
     }
 
+
     public String getConfirmed() {
         return confirmed;
     }

@@ -11,15 +11,15 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="COVID-19 Cases in India"
-        android:textSize="35dp"
+        android:textSize="30dp"
         android:layout_gravity="center"
         android:textStyle="bold"
-        android:fontFamily="casual"
+        android:fontFamily="serif"
         android:textColor="#D32F2F"/>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="512dp">
+        android:layout_height="530dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler"
