@@ -1,7 +1,7 @@
 package com.example.covid_19api;
 
 public class Covid_assign {
-    private String confirmed, active, deaths, date;
+   public String confirmed, active, deaths, date;
 
     public Covid_assign(String confirmed, String active, String deaths, String date){
         this.confirmed = confirmed;
@@ -11,7 +11,7 @@ public class Covid_assign {
     }
 
     public String getConfirmed() {
-        return active;
+        return confirmed;
     }
 
     public void setConfirmed(String confirmed) {

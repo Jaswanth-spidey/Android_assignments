@@ -7,11 +7,33 @@
     android:layout_height="match_parent"
     tools:context="com.example.covid_19api.MainActivity"
     android:orientation="vertical">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="COVID-19 Cases in India"
+        android:textSize="35dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textColor="#D32F2F"/>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/recycler"/>
+        android:layout_height="512dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Refresh"
+        android:textColor="#ffffff" />
 
 
 
