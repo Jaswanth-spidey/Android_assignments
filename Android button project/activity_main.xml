@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.example.countapp.MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="100sp"
+        android:textColor="#020202"/>
+
+    <LinearLayout
+        android:orintation="horizontal"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/b1"
+            android:layout_weight="0.25"
+            android:text="+"
+            android:background="#E4135A"
+            android:textColor="#ffffff"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/b2"
+            android:layout_weight="0.25"
+            android:text="-"
+            android:background="#FFEB3B"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="#E4135A"
+            android:text="Reset"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="Toast"
+            android:background="#FFEB3B"
+            android:textColor="#000000"
+            android:onClick="display"/>
+    </LinearLayout>
+</LinearLayout>
